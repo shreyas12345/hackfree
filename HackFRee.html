@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--fix userText changing when page is switched-->
+<!--to do: create prototype account page and create login page -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>HackFRee</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    
+    <link type = "text/css" href = "HackFRee.css" rel = "stylesheet">
+    <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
+    
+  </head>
+  <body body data-spy="scroll" data-target=".navbar-collapse" data-offset = "50">
+  
+  	<div class = "navbar navbar-fixed-top navbar-inverse" id = "thing">
+  	<!--first class tells what type of element and the second one tells the type of design, how we want it to look-->
+  	
+  		<div class = "container">
+  		
+  			<div class = "navbar-header">
+  				<img src = "ptlogo3.png" class = "navbar-brand">
+  				<a href = "stufff.php" class = "navbar-brand"><span id = "title">PAKTRAKKER</span></a>
+					  				
+  				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse" style = "background-color:#2C3E50">
+  				<!--data target links the navbar collapse class to this-->
+  				
+  					<span class = "sr-only">Toggle Navigation</span>
+  					<span class = "icon-bar"></span>
+  					<span class = "icon-bar"></span>
+  					<span class = "icon-bar"></span>
+  					<!--these three things make up the icon for the menu(the three bars)-->
+  					</button>
+  			</div>
+  			
+  			<div class = "collapse navbar-collapse">
+  		<!--collapses when the pixel size reaches the phone level-->
+  		
+  			<ul class = "nav navbar-nav">
+  						
+  				<li class = "hvr-underline-from-center"><a href = "paktrakkeraboutpage.php"><span id = "aboutText">abouT</span></a></li>
+  				<li><a href = "#missionStatement">when&wherE</a></li>
+  				<li><a href = "">schedulE</a></li>
+  				<li><a href = "">faQ</a></li>
+  				<li><a href = "">sponsorS</a></li>
+  				<li><a href = "">socialmediA</a></li>
+  				<!--class active highlights it-->
+  			</ul>
+		
+  			</div>
+  		
+  		</div>
+  	
+  	</div>
+    
+    <div class = "container contentContainer" id = "topContainer">
+    	<div class = "row">
+    		<div class = "col-md-6 col-md-offset-3" id = "topRow">
+    		<h1>"Love your neighbor, yet don't pull down your hedge"<h1>
+    		<h1>~Benjamin Franklin</h1>
+    	</div>
+    </div>
+ </div>
+ 
+    <div class = "container contentContainer" id = "missionStatement">
+    	<div class = "row">
+    			<h1 class = "centered"> We put a premium on privacy today. PakTrakker allows 
+    			for an effective method of recovering lost belongings without sacrificing your privacy.
+    			</h1>
+    		</div>
+    	<div class = "row">
+    		<div class = "col-md-6 text-left" style = "color:#FFFFFF" >
+    		<h2>Header</h2>	FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE 
+    		<h2>Another Header</h2>SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE 
+    	</div>
+    	<div class = "row">
+    		<div class = "col-md-6 right" style = "color:#FFFFFF">
+    		<h2>Final Header</h2>THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE
+    		<br /><br /><br /><br /><br /><br />
+    		<button class = "btn btn-success" style = "margin-right:200px" id = "learn" >Learn More!</button>
+    	</div>
+    </div>
+ </div>
+ </div>
+    <div class = "container contentContainer" id = "appPicture">
+    	</div>
+    </div>
+    
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    
+   <script>
+    	$(".contentContainer").css("min-height", $(window).height());
+    </script>
+    
+  </body>
+  
+  <!-- 
+  things to add: sliding carousel for images on homepage maybe
+  for signin:
+  	make a proper signin
+  	make sure usernames can't be repeated
+  	change the homepage when a person successfully signs in to show their username next to the person glyphicon
+  	make the account page functional, only when a person is logged in
+ --> 
+</html>

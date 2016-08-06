@@ -1,0 +1,97 @@
+    	.navbar{
+    		 border: 0;
+    	}
+    
+    	.box{
+    		background-color:#2ECC71;
+    		border:1px solid gray;
+    	}
+    	
+    	#topContainer{
+    		background-image:url("image.png");
+    		background-color:lightblue;
+    		width:100%;
+    		background-size:cover;
+    	}
+    	
+    	#topRow{
+    		margin:100px;
+    		padding-right:70px;
+    		text-align:center;
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    	}
+    	
+    	#missionStatement{
+    		background-image:url("image2.png");
+    		background-color:pink;
+    		width:100%;
+    		background-size:cover;
+    	}
+    	
+    	.centered{
+    		text-align:center;
+    		color:#FFFFFF;
+    		padding:50px;
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    	}
+    	
+    	#appPicture{
+    		background-image:url("iphoneimage.jpg");
+    		width:100%;
+    		background-size:cover;
+    	}
+    	
+    	span{
+    		color:#F2F3F4;
+    		font-weight:bold;
+    	}	
+    	
+    	input{
+    		margin-right:20px;
+    	}
+    	
+    	li{
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    	}
+    	
+    	#thing{
+    		background-color:#F2F3F4;
+    	}
+    	
+    	#title{
+    		color:#2C3E50;
+    		font-family: "PlayfairDisplay";
+    	}
+    	
+    	#userText{
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    		color: black;
+    		margin-left:7px;
+    		position:relative;
+    		bottom:1px;
+    	}
+    	
+    	#userText2{
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    		color: black;
+    		margin-left:7px;
+    		position:relative;
+    		bottom:1px;
+    	}
+    	
+    	#aboutText{
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    		color: black;
+    		margin-left:7px;
+    		position:relative;
+    		bottom:1px;
+    	}
+    	
+    	#worksText{
+    		font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    		color: black;
+    		margin-left:7px;
+    		position:relative;
+    		bottom:1px;
+    	}
+  

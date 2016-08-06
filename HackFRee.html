@@ -45,8 +45,8 @@
   		
   			<ul class = "nav navbar-nav">
   						
-  				<li class = "hvr-underline-from-center"><a href = "paktrakkeraboutpage.php"><span id = "aboutText">abouT</span></a></li>
-  				<li><a href = "#missionStatement">when&wherE</a></li>
+  				<li class = "hvr-underline-from-center"><a href = "#topContainer"><span id = "aboutText">abouT</span></a></li>
+  				<li id = "whenandwhere"><a href = "#">when&wherE</a></li>
   				<li><a href = "">schedulE</a></li>
   				<li><a href = "">faQ</a></li>
   				<li><a href = "">sponsorS</a></li>
@@ -99,8 +99,14 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     
+    
    <script>
     	$(".contentContainer").css("min-height", $(window).height());
+    	$("#whenandwhere").click(function(){
+    	$('html, body').animate({
+    scrollTop: $("#missionStatement").offset().top
+}, 1000);
+});
     </script>
     
   </body>

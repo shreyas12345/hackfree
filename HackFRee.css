@@ -22,30 +22,11 @@
     	}
     	
     	#missionStatement{
+    		background-image:url("image2.png");
     		background-color:pink;
     		width:100%;
     		background-size:cover;
     	}
-		
-		#schedule {
-			background-color: #00487C;
-			background-size:cover;
-		}
-		
-		#faq {
-			background-color: #4BB3FD;
-			background-size:cover;
-		}
-		
-		#sponsors {
-			background-color: #3E6680;
-			background-size:cover;
-		}
-		
-		#socialMedia {
-			background-color: #0496FF;
-			background-size:cover;
-		}
     	
     	.centered{
     		text-align:center;

@@ -9,7 +9,7 @@
     	
     	#topContainer{
     		background-image:url("image.png");
-    		background-color:lightblue;
+    		background-color:#97d3fe;
     		width:100%;
     		background-size:cover;
     	}
@@ -22,7 +22,7 @@
     	}
     	
     	#missionStatement{
-    		background-color:pink;
+    		background-color:#027BCE;
     		width:100%;
     		background-size:cover;
     	}
@@ -30,21 +30,25 @@
 		#schedule {
 			background-color: #00487C;
 			background-size:cover;
+			width:100%;
 		}
 		
 		#faq {
 			background-color: #4BB3FD;
 			background-size:cover;
+			width:100%;
 		}
 		
 		#sponsors {
 			background-color: #3E6680;
 			background-size:cover;
+			width:100%;
 		}
 		
 		#socialMedia {
 			background-color: #0496FF;
 			background-size:cover;
+			width:100%;
 		}
     	
     	.centered{

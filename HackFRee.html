@@ -46,11 +46,11 @@
   			<ul class = "nav navbar-nav">
   						
   				<li class = "hvr-underline-from-center"><a href = "#topContainer"><span id = "aboutText">abouT</span></a></li>
-  				<li id = "whenandwhere"><a href = "#">when&wherE</a></li>
-  				<li id = "scheduleNav"><a href = "#">schedulE</a></li>
-  				<li id = "faqNav"><a href = "#">faQ</a></li>
-  				<li id="sponsorsNav"><a href = "#">sponsorS</a></li>
-  				<li id="socialMediaNav"><a href = "#">socialmediA</a></li>
+  				<li class = "hvr-underline-from-center" id = "whenandwhere"><a href = "#">when&wherE</a></li>
+  				<li class = "hvr-underline-from-center" id = "scheduleNav"><a href = "#">schedulE</a></li>
+  				<li class = "hvr-underline-from-center" id = "faqNav"><a href = "#">faQ</a></li>
+  				<li class = "hvr-underline-from-center" id="sponsorsNav"><a href = "#">sponsorS</a></li>
+  				<li class = "hvr-underline-from-center" id="socialMediaNav"><a href = "#">socialmediA</a></li>
   				<!--class active highlights it-->
   			</ul>
 		
@@ -71,20 +71,9 @@
  
     <div class = "container contentContainer" id = "missionStatement">
     	<div class = "row">
-			<h1 class = "centered"> We put a premium on privacy today. PakTrakker allows 
-			for an effective method of recovering lost belongings without sacrificing your privacy.
+			<h1 class = "centered"> Mission Statement
 			</h1>
-		</div>
-    	<div class = "row">
-    		<div class = "col-md-6 text-left" style = "color:#FFFFFF" >
-    		<h2>Header</h2>	FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE 
-    		<h2>Another Header</h2>SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE SECOND FEATURE 
-    	</div>
-    	<div class = "row">
-    		<div class = "col-md-6 right" style = "color:#FFFFFF">
-    		<h2>Final Header</h2>THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE THIRD FEATURE
-    		<br /><br /><br /><br /><br /><br />
-    		<button class = "btn btn-success" style = "margin-right:200px" id = "learn" >Learn More!</button>
+			<h3 class="centered">This 24‐hour hackathon will bring students together from the Freehold Regional High School District (FRHSD) for the purpose of collaborative computer programming and learning. FRHSD is located in Western Monmouth County, NJ and approximately 11,400 students are educated in six high schools. The schools include Manalapan, Colts Neck, Marlboro, Freehold Boro, Freehold Township, and Howell. More than 87 percent of our students pursue higher education, including the most prestigious colleges and universities in the nation.</h3>
     	</div>
     </div>
  </div>
@@ -93,6 +82,7 @@
 		<div class = "row">
 			<h1 class = "centered"> Schedule
 			</h1>
+			<h3 class="centered"><i>Coming soon</i></h3>
     	</div>
     </div>
 	
@@ -129,31 +119,36 @@
    <script>
     	$(".contentContainer").css("min-height", $(window).height());
 		
-    	$("#whenandwhere").click(function(){
+    	$("#whenandwhere").click(function(e){
+			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#missionStatement").offset().top
 			}, 1000);
 		});
 		
-		$("#scheduleNav").click(function(){
+		$("#scheduleNav").click(function(e){
+			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#schedule").offset().top
 			}, 1000);
 		});
 		
-		$("#faqNav").click(function(){
+		$("#faqNav").click(function(e){
+			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#faq").offset().top
 			}, 1000);
 		});
 		
-		$("#sponsorsNav").click(function(){
+		$("#sponsorsNav").click(function(e){
+			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#sponsors").offset().top
 			}, 1000);
 		});
 		
-		$("#socialMediaNav").click(function(){
+		$("#socialMediaNav").click(function(e){
+			e.preventDefault();
 			$('html, body').animate({
 				scrollTop: $("#socialMedia").offset().top
 			}, 1000);

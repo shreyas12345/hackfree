@@ -26,8 +26,8 @@
   		<div class = "container">
   		
   			<div class = "navbar-header">
-  				<img src = "ptlogo3.png" class = "navbar-brand">
-  				<a href = "stufff.php" class = "navbar-brand"><span id = "title">PAKTRAKKER</span></a>
+  				<img src = "logo2.png" class = "navbar-brand">
+  				<a href = "hackfree.html" class = "navbar-brand"><span id = "title">HackFRee</span></a>
 					  				
   				<button type = "button" class = "navbar-toggle" data-toggle = "collapse" data-target = ".navbar-collapse" style = "background-color:#2C3E50">
   				<!--data target links the navbar collapse class to this-->
@@ -47,10 +47,10 @@
   						
   				<li class = "hvr-underline-from-center"><a href = "#topContainer"><span id = "aboutText">abouT</span></a></li>
   				<li id = "whenandwhere"><a href = "#">when&wherE</a></li>
-  				<li><a href = "">schedulE</a></li>
-  				<li><a href = "">faQ</a></li>
-  				<li><a href = "">sponsorS</a></li>
-  				<li><a href = "">socialmediA</a></li>
+  				<li id = "scheduleNav"><a href = "#">schedulE</a></li>
+  				<li id = "faqNav"><a href = "#">faQ</a></li>
+  				<li id="sponsorsNav"><a href = "#">sponsorS</a></li>
+  				<li id="socialMediaNav"><a href = "#">socialmediA</a></li>
   				<!--class active highlights it-->
   			</ul>
 		
@@ -67,14 +67,14 @@
     		<h1>~Benjamin Franklin</h1>
     	</div>
     </div>
- </div>
+	</div>
  
     <div class = "container contentContainer" id = "missionStatement">
     	<div class = "row">
-    			<h1 class = "centered"> We put a premium on privacy today. PakTrakker allows 
-    			for an effective method of recovering lost belongings without sacrificing your privacy.
-    			</h1>
-    		</div>
+			<h1 class = "centered"> We put a premium on privacy today. PakTrakker allows 
+			for an effective method of recovering lost belongings without sacrificing your privacy.
+			</h1>
+		</div>
     	<div class = "row">
     		<div class = "col-md-6 text-left" style = "color:#FFFFFF" >
     		<h2>Header</h2>	FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE FIRST FEATURE 
@@ -89,9 +89,35 @@
     </div>
  </div>
  </div>
-    <div class = "container contentContainer" id = "appPicture">
+    <div class = "container contentContainer" id = "schedule" >
+		<div class = "row">
+			<h1 class = "centered"> Schedule
+			</h1>
     	</div>
     </div>
+	
+	<div class = "container contentContainer" id = "faq">
+		<div class = "row">
+			<h1 class = "centered"> Frequently Asked Questions
+			</h1>
+    	</div>
+    </div>
+	
+	<div class = "container contentContainer" id = "sponsors">
+		<div class = "row">
+			<h1 class = "centered"> Our Wonderful Sponsors
+			</h1>
+    	</div>
+    </div>
+	
+	<div class = "container contentContainer" id = "socialMedia">
+		<div class = "row">
+			<h1 class = "centered"> Media of Social
+			</h1>
+    	</div>
+    </div>
+	
+
     
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -102,11 +128,36 @@
     
    <script>
     	$(".contentContainer").css("min-height", $(window).height());
+		
     	$("#whenandwhere").click(function(){
-    	$('html, body').animate({
-    scrollTop: $("#missionStatement").offset().top
-}, 1000);
-});
+			$('html, body').animate({
+				scrollTop: $("#missionStatement").offset().top
+			}, 1000);
+		});
+		
+		$("#scheduleNav").click(function(){
+			$('html, body').animate({
+				scrollTop: $("#schedule").offset().top
+			}, 1000);
+		});
+		
+		$("#faqNav").click(function(){
+			$('html, body').animate({
+				scrollTop: $("#faq").offset().top
+			}, 1000);
+		});
+		
+		$("#sponsorsNav").click(function(){
+			$('html, body').animate({
+				scrollTop: $("#sponsors").offset().top
+			}, 1000);
+		});
+		
+		$("#socialMediaNav").click(function(){
+			$('html, body').animate({
+				scrollTop: $("#socialMedia").offset().top
+			}, 1000);
+		});
     </script>
     
   </body>

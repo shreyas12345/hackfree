@@ -30,12 +30,14 @@
 			background-color: #00487C;
 			background-size:cover;
 			width:100%;
+
 		}
 		
 		#faq {
 			background-color: #4BB3FD;
 			background-size:cover;
 			width:100%;
+
 		}
 		
 		#sponsors {
@@ -58,6 +60,7 @@
 			color:red;
 		}
 		
+    	
     	.centered{
     		text-align:center;
     		color:#FFFFFF;

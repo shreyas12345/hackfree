@@ -2,8 +2,12 @@
 <!--
 change the active link color, and maybe make it correspond to the background of the container using a function of course
 fix fonts
+change active colors of things to match divs
 fix information
 beta test to make sure everything is functional
+animations:
+when and where: slide in from both sides
+faq:have them slide in from one side, like laying down cards 
 -->
 <html>
 <head>
@@ -13,6 +17,7 @@ beta test to make sure everything is functional
   <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     
     <link type = "text/css" href = "HackFRee.css" rel = "stylesheet">
     <link href="Hover-master/css/hover.css" rel="stylesheet" media="all">
@@ -31,13 +36,13 @@ beta test to make sure everything is functional
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">HackFRee</a>
+       <img src = "logo2.png" class = "navbar-brand">
+      <a class="navbar-brand" href="#topContainer">HackFRee</a>
     </div>
     <div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class = "nav navbar-nav" id = "something2">	
-  				<li class = "hvr-underline-from-center hvr-skew-forward" id = "aboutText"><a href = "#topContainer">abouT</a></li>
-  				<li class = "hvr-underline-from-center hvr-skew-forward" id = "whenandwhere"><a href = "#missionStatement">when&wherE</a></li>
+  				<li class = "hvr-underline-from-center hvr-skew-forward" id = "aboutText"><a href = "#missionStatement">abouT</a></li>
   				<li class = "hvr-underline-from-center hvr-skew-forward" id = "scheduleNav"><a href = "#schedule">schedulE</a></li>
   				<li class = "hvr-underline-from-center hvr-skew-forward" id = "faqNav"><a href = "#faq">faQ</a></li>
   				<li class = "hvr-underline-from-center hvr-skew-forward" id="sponsorsNav"><a href = "#sponsors">sponsorS</a></li>
@@ -51,31 +56,41 @@ beta test to make sure everything is functional
 
   <div class = "container contentContainer" id = "topContainer">
     	<div class = "row">
-    		<div class = "col-md-6 col-md-offset-3" id = "topRow">
-    		<h1>"Love your neighbor, yet don't pull down your hedge"<h1>
-    		<h1>~Benjamin Franklin</h1>
+    		<div class = "centered2" id = "aboutContainer">
+    		<h1>THE FIRST FRHSD HACKATHON</h1>
+    		<!--make the text diagonal-->	
     	</div>
     </div>
 	</div>
  
     <div class = "container contentContainer" id = "missionStatement">
     	<div class = "row">
-			<h1 class = "centered"> We put a premium on privacy today. PakTrakker allows 
-			for an effective method of recovering lost belongings without sacrificing your privacy.
-			</h1>
+			<h1 class = "centered">When and Where</h1>
+			<!--when the user scrolls have the divs containing the information slide in,
+			one for the when and one for the where-->
 		</div>
     </div>
     <div class = "container contentContainer" id = "schedule" >
 		<div class = "row">
-			<h1 class = "centered"> Schedule
-			</h1>
+			<h1 class = "centered"> Schedule</h1>
+			<ul id = "scheduleList">
+				<li class = "bullet">Thing 1</li>
+				<li class = "bullet">Thing 2</li>
+				<li class = "bullet">Thing 3</li>
+				<!--Put big number time behind it-->
+			</ul>
     	</div>
     </div>
 	
 	<div class = "container contentContainer" id = "faq">
 		<div class = "row">
-			<h1 class = "centered"> Frequently Asked Questions
-			</h1>
+			<h1 class = "centered"> Frequently Asked Questions</h1>
+			<div class = "col-md-2 faqRectangles" id = "rectangle1">
+			</div>
+			<div class = "col-md-2 faqRectangles" id = "rectangle2">
+			</div>
+			<div class = "col-md-2 faqRectangles" id = "rectangle3">
+			</div>
     	</div>
     </div>
 	
@@ -102,7 +117,7 @@ $(document).ready(function(){
   $('body').scrollspy({target: ".navbar", offset: 50});
 
   // Add smooth scrolling on all links inside the navbar
-  $("#myNavbar a").on('click', function(event) {
+  $("#thing a").on('click', function(event) {
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
       // Prevent default anchor click behavior
@@ -123,6 +138,8 @@ $(document).ready(function(){
     }  // End if
   });
 });
+
+
 </script>
 
 </body>
